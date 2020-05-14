@@ -1,3 +1,25 @@
 body {
 	background-color: aqua;
 }
+#form-container {
+	display: flex;
+	flex-direction: column;
+	width: 99vw;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
+}
+#create-entry {
+	width: 15vw;
+    padding: 2em;
+    font-size: 20px;
+}
+#submit-btn {
+	margin-top: 1em;
+}
+input, label{
+    margin-bottom: 1em;
+}
+h3{
+    font-size: 25px;
+}
