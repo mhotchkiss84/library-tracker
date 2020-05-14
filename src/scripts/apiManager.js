@@ -4,6 +4,7 @@ function buildHTMLString(element) {
     <p>Author: ${element.author}</p>
     <p>ISBN: ${element.ISBN}</p>
     <button id="delete-btn-${element.id}">Delete</button>
+    <button id="edit-btn-${element.id}">Edit</button>
     </div>
     `;
 	return htmlString;
@@ -30,16 +31,21 @@ const fetchFunctions = {
 			body: JSON.stringify(bookInfo)
 		}).then(() => {
 			clearScreen();
-			fetchFunctions.fetchBooks()
+			fetchFunctions.fetchBooks();
 		});
-    },
-    deleteBook: (entryID) => {
-        fetch(`http://localhost:8088/books/${entryID}`, {
+	},
+	deleteBook: (entryID) => {
+		fetch(`http://localhost:8088/books/${entryID}`, {
 			method: 'DELETE'
 		}).then(() => {
-            clearScreen()
-            fetchFunctions.fetchBooks()
+			clearScreen();
+			fetchFunctions.fetchBooks();
 		});
-    }
+	},
+	singleBook: (entryID) => {
+        return fetch(`http://localhost:8088/books/${entryID}`).then((book) => book.json()).then((parsedBook) => {
+		return parsedBook
+		});
+	}
 };
 export default fetchFunctions;

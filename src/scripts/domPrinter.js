@@ -1,7 +1,5 @@
-// When the user enters information into the fields and clicks a "Save" button, the new book should be saved to the database.
-
 // Importing the fetch functions
-import fetchFunctions from './apiManager.js'
+import fetchFunctions from './apiManager.js';
 // Creating a object to store the dom printer functions
 const domPrinter = {
 	//Creating a function to print the form to the DOM
@@ -24,8 +22,25 @@ const domPrinter = {
         `;
 	},
 	printBooks: () => {
-        fetchFunctions.fetchBooks()
-    }
+		fetchFunctions.fetchBooks();
+	},
+	editBook: (editButtonID) => {
+		fetchFunctions.singleBook(editButtonID).then((parsedBook) => {
+			document.querySelector(`#book-${editButtonID}`).innerHTML = `<div id=form-div>
+        <form id="edit-entry">
+        <label for="edit-title">Title</>
+        <input type="text" id="edit-book-title" value="${parsedBook.title}">
+        <label for="author">Author</>
+        <input type="text" id="edit-book-author" value="${parsedBook.author}">
+        <label for="isbn">ISBN Number</>
+        <input type="text" id="edit-book-isbn" value="${parsedBook.ISBN}">
+        </form>
+        </div>
+        <div id="button-div">
+        <button id="edit-save-btn">Submit</button>
+        </div>`;
+		});
+	}
 };
 // Exporting the domPrinter functions
 export default domPrinter;

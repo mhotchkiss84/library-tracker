@@ -1,4 +1,5 @@
 import fetchFunctions from './apiManager.js';
+import domPrinter from './domPrinter.js';
 // Creating an object for the event listener actions
 const eventListeners = {
 	// Creating a function for submitting a new book
@@ -18,6 +19,11 @@ const eventListeners = {
         let deleteBtnID = event.target.id.split(`-`)[2]
         fetchFunctions.deleteBook(deleteBtnID)
 
+    },
+    editBookEvent: () => {
+        let editButtonID = event.target.id.split(`-`)[2]
+        console.log(editButtonID)
+        domPrinter.editBook(editButtonID)   
     }
 };
 // Exporting the event listener functions

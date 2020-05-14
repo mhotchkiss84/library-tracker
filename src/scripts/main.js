@@ -14,6 +14,8 @@ document.querySelector(`#submit-btn`).addEventListener('click', (submitEvent) =>
 document.body.addEventListener("click", bodyEvent =>{
     if(event.target.id.includes(`delete`)){
         eventListeners.deleteBookEvent()
+    } else if(event.target.id.includes(`edit`)){
+        eventListeners.editBookEvent()
     }
 })
 
