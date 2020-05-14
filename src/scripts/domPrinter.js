@@ -1,7 +1,3 @@
-// When the page loads, users should see a form with the following fileds:
-// Title
-// Author
-// ISBN Number
 // When the user enters information into the fields and clicks a "Save" button, the new book should be saved to the database.
 
 // Creating a object to store the dom printer functions
