@@ -20,3 +20,4 @@ document.body.addEventListener("click", bodyEvent =>{
 })
 
 // ToDo: Make function that detects if form is blank and puts an error instead of submitting to the JSON database
+// Clean up edit book function and use another function inside it
