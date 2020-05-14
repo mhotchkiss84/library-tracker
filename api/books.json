@@ -1,0 +1,16 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"title": "Harry Potter and the Sorcerer's Stone",
+			"author": "J.K. Rowling",
+			"ISBN": "123456"
+		},
+		{
+			"id": 2,
+			"title": "Harry Potter and the Chamber of Secrets",
+			"author": "J.K. Rowling",
+			"ISBN": "1234567"
+		}
+	]
+}
