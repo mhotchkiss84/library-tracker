@@ -15,10 +15,22 @@ body {
 }
 #submit-btn {
 	margin-top: 1em;
+	margin-bottom: 1em;
 }
 input, label{
     margin-bottom: 1em;
 }
 h3{
     font-size: 25px;
+}
+#edit-entry{
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+}
+#edit-entry input, #edit-entry label{
+	margin-bottom:  1em;
+}
+#edit-save-btn{
+	margin-bottom: 1em;
 }
