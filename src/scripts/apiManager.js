@@ -1,6 +1,6 @@
 // Creating a function for building an HTML string
 function buildHTMLString(element) {
-	let htmlString = `<div id="book-${element.id}"<h2>${element.title}</h2>
+	let htmlString = `<div id="book-${element.id}" class="printed-book"<h2>${element.title}</h2>
     <p>Author: ${element.author}</p>
     <p>ISBN: ${element.ISBN}</p>
     <button id="delete-btn-${element.id}">Delete</button>

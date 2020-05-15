@@ -4,13 +4,15 @@ body {
 #form-container {
 	display: flex;
 	flex-direction: column;
-	width: 99vw;
+	flex-wrap: wrap;
+	width: 99%;
 	text-align: center;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
+	/* border: 1px solid red; */
 }
 #create-entry {
-	width: 15vw;
+	width: 50vw;
     font-size: 18px;
 }
 #submit-btn {
@@ -18,7 +20,7 @@ body {
 	margin-bottom: 1em;
 }
 input, label{
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 h3{
     font-size: 25px;
@@ -29,8 +31,14 @@ h3{
 	width: 20vw;
 }
 #edit-entry input, #edit-entry label{
-	margin-bottom:  1em;
+	/* margin-bottom:  1em; */
+	display: flex;
+	flex-direction: column;
 }
 #save-btn{
 	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.printed-book{
+	margin-bottom: 2em;
 }

@@ -16,6 +16,8 @@ document.body.addEventListener("click", bodyEvent =>{
         eventListeners.deleteBookEvent()
     } else if(event.target.id.includes(`edit`)){
         eventListeners.editBookEvent()
+    } else if(event.target.id.includes(`save`)){
+        console.log("You clicked the save button")
     }
 })
 
