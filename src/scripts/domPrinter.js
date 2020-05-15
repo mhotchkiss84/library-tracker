@@ -36,8 +36,8 @@ const domPrinter = {
         <input type="text" id="edit-book-isbn" value="${parsedBook.ISBN}">
         </form>
         </div>
-        <div id="button-div">
-        <button id="edit-save-btn">Submit</button>
+        <div id="edit-button-div">
+        <button id="save-btn">Submit</button>
         </div>`;
 		});
 	}
