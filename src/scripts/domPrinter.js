@@ -37,7 +37,7 @@ const domPrinter = {
         </form>
         </div>
         <div id="edit-button-div">
-        <button id="save-btn">Submit</button>
+        <button id="save-btn">Save</button>
         </div>`;
 		});
 	}
