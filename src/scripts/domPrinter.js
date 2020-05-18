@@ -29,15 +29,15 @@ const domPrinter = {
 			document.querySelector(`#book-${editButtonID}`).innerHTML = `<div id=form-div>
         <form id="edit-entry">
         <label for="edit-title">Title</>
-        <input type="text" id="edit-book-title" value="${parsedBook.title}">
+        <input type="text" id="edit-book-title" value="${parsedBook[0].title}">
         <label for="author">Author</>
-        <input type="text" id="edit-book-author" value="${parsedBook.author}">
+        <input type="text" id="edit-book-author" value="${parsedBook[0].author}">
         <label for="isbn">ISBN Number</>
-        <input type="text" id="edit-book-isbn" value="${parsedBook.ISBN}">
+        <input type="text" id="edit-book-isbn" value="${parsedBook[0].ISBN}">
         </form>
         </div>
         <div id="edit-button-div">
-        <button id="save-btn">Save</button>
+        <button id="save-btn-${editButtonID}">Save</button>
         </div>`;
 		});
 	}

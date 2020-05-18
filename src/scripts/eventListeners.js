@@ -22,8 +22,11 @@ const eventListeners = {
     },
     editBookEvent: () => {
         let editButtonID = event.target.id.split(`-`)[2]
-        console.log(editButtonID)
         domPrinter.editBook(editButtonID)   
+    },
+    saveBookEvent: () => {
+        let saveBtnId = event.target.id.split(`-`)[2]
+        console.log(`You clicked the save btn:`, saveBtnId)
     }
 };
 // Exporting the event listener functions
