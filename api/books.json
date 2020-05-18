@@ -1,26 +1,26 @@
 {
-	"users": [
-		{
-			"id": 1,
-			"name": "Test Person",
-			"login": "Test",
-			"password": "password"
-		}
-	],
-	"books": [
-		{
-			"id": 1,
-			"title": "Harry Potter and the Sorcerer's Stone",
-			"author": "J.K. Rowling",
-			"ISBN": "123456",
-			"userId": 1
-		},
-		{
-			"id": 2,
-			"title": "Harry Potter and the Chamber of Secrets",
-			"author": "J.K. Rowling",
-			"ISBN": "1234567",
-			"userId": 1
-		}
-	]
+  "users": [
+    {
+      "id": 1,
+      "name": "Test Person",
+      "login": "Test",
+      "password": "password"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "ISBN": "123",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "ISBN": "321",
+      "userId": 1
+    }
+  ]
 }

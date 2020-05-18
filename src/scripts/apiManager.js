@@ -48,6 +48,18 @@ const fetchFunctions = {
 			.then((parsedBook) => {
 				return parsedBook;
 			});
+	},
+	saveEdit: (entry) => {
+		return fetch(`http://localhost:8088/books/${entry.id}`,{
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entry)
+    }) .then(() => {
+		clearScreen()
+		fetchFunctions.fetchBooks()
+	})
 	}
 };
 export default fetchFunctions;

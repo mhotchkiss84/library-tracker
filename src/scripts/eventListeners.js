@@ -26,7 +26,18 @@ const eventListeners = {
     },
     saveBookEvent: () => {
         let saveBtnId = event.target.id.split(`-`)[2]
-        console.log(`You clicked the save btn:`, saveBtnId)
+        const bookTitle = document.querySelector(`#edit-book-title-${saveBtnId}`).value
+        const bookAuthor = document.querySelector(`#edit-book-author-${saveBtnId}`).value
+        const bookISBN = document.querySelector(`#edit-book-isbn-${saveBtnId}`).value
+        const editBookValues = {
+            id: saveBtnId,
+            title: bookTitle,
+            author: bookAuthor,
+            ISBN: bookISBN,
+            userId: 1
+        }
+        console.log(editBookValues)
+        fetchFunctions.saveEdit(editBookValues)
     }
 };
 // Exporting the event listener functions
